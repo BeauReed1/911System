@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EmergencyLink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand">EMERGENCYLINK</div>
+        <div id="connection">NOT CONNECTED</div>
+    </header>
+
+    <main>
+        <section id="homeScreen">
+            <div class="status" id="deviceStatus">Emergency station ready</div>
+
+            <button id="callButton" class="emergency">
+                CALL 911
+            </button>
+
+            <p class="instruction">
+                Press to open the phone's emergency calling screen
+                and activate the local alarm.
+            </p>
+
+            <button id="testButton" class="test">
+                TEST ALARM
+            </button>
+
+            <button id="stopButton" class="stop">
+                STOP ALARM
+            </button>
+
+            <div id="alarmStatus">Alarm is off</div>
+
+            <hr>
+
+            <button id="settingsButton">DEVICE SETTINGS</button>
+            <button id="maintenanceButton">MAINTENANCE MODE</button>
+        </section>
+
+        <section id="settingsScreen" hidden>
+            <h2>Device settings</h2>
+
+            <label>Dashboard API URL</label>
+            <input id="apiUrl" type="url"
+                   placeholder="https://your-site.com/emergency/server/api.php">
+
+            <label>Device code</label>
+            <input id="deviceCode" type="text"
+                   placeholder="Example: STATION-001">
+
+            <label>Pairing code</label>
+            <input id="pairCode" type="text"
+                   placeholder="Enter dashboard pairing code">
+
+            <button id="pairButton" class="test">PAIR DEVICE</button>
+            <button id="saveButton">SAVE SETTINGS</button>
+            <button id="backButton">BACK</button>
+
+            <p id="settingsMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <span id="footerStatus">EmergencyLink v1.0</span>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
