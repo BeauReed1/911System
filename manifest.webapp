@@ -1,0 +1,22 @@
+
+{
+  "version": "1.0.0",
+  "name": "EmergencyLink",
+  "description": "Emergency calling and remote device management",
+  "launch_path": "/index.html",
+  "type": "web",
+  "developer": {
+    "name": "EmergencyLink",
+    "url": "https://edtechschools.net"
+  },
+  "icons": {
+    "56": "/icon-56.png",
+    "112": "/icon-112.png"
+  },
+  "orientation": "portrait",
+  "permissions": {
+    "alarms": {},
+    "storage": {},
+    "systemXHR": {}
+  }
+}
